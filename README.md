@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+client = Stockr::Client.new(api_key: ENV["ALPHA_VANTAGE_API_KEY"])
+
+instance = client.instances.create({})
+instance.name
+```
 
 ## Development
 

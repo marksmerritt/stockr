@@ -3,6 +3,6 @@
 require_relative "stockr/version"
 
 module Stockr
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Client, "stockr/client"
+  autoload :Error, "stockr/error"
 end
