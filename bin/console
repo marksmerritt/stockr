@@ -4,7 +4,7 @@
 require "bundler/setup"
 require "stockr"
 
-client = Stockr::Client.new
+client = Stockr::Client.new(api_key: ENV["ALPHA_VANTAGE_API_KEY"])
 
 require "irb"
 IRB.start(__FILE__)

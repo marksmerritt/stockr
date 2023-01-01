@@ -7,7 +7,6 @@ gemspec
 
 group :development do
 	gem "rake", "~> 13.0"
-	gem "rspec", "~> 3.0"
 end
 
 group :lint do

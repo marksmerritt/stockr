@@ -6,10 +6,20 @@ module Stockr
 
 		attr_reader :api_key, :adapter
 
-		def initialize(api_key: ENV["ALPHA_VANTAGE_API_KEY"], adapter: Faraday.default_adapter)
+		def initialize(api_key:, adapter: Faraday.default_adapter)
 			@api_key = api_key
 			@adapter = adapter
 		end
+
+		def account
+		end
+
+		def applications
+		end
+
+		def plans
+		end
+
 
 		def connection
 			@connection ||= Faraday.new do |conn|
